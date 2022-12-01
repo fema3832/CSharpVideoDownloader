@@ -42,17 +42,17 @@ namespace video_downloader
         {
             if (formatList.SelectedItem == null)
             {
-                MessageBox.Show("Nincs kiválasztva formátum");
+                MessageBox.Show("No format selected.");
                 return;
             }
             if (direcotryPath == "")
             {
-                MessageBox.Show("Nincs kiválasztva output (célkönyvtár)");
+                MessageBox.Show("No output (destination directory) selected.");
                 return;
             }
             if (linkBox.Text == "")
             {
-                MessageBox.Show("Nincs megadva link");
+                MessageBox.Show("No link provided.");
                 return;
             }
 
@@ -80,7 +80,7 @@ namespace video_downloader
 
             catch (Exception)
             {
-                MessageBox.Show("Nem jó a link");
+                MessageBox.Show("The link is not good.");
             }
         }
 
